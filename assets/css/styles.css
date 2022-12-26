@@ -58,6 +58,42 @@
     --smaller-font-size: .813rem;
   }
 }
+/* Media query Responsive para cuando la pantalla es pequeña de tamaño de celulares promedio */
+@media only screen and (max-width: 600px) {
+  .container__information {
+    display: block;
+  }
+  .about__content--personal-information, .about__content--interests {
+    width: 100%;
+  }
+  
+.personal-information__content--item {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.personal-information__item--title {
+  width: 100%;
+  margin-bottom: .3rem;
+  color: var(--first-color-alt);
+}
+}
+@media screen and (min-width: 600px) {
+  .container__information {
+    display: flex;
+  }
+  .about__content--personal-information, .about__content--interests {
+    width: 50%;
+  } 
+.personal-information__content--item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.personal-information__item--title {
+  width: 45%;
+  color: var(--first-color-alt);
+}
+}
 
 /*=============== BASE ===============*/
 * {
@@ -245,6 +281,7 @@ p{
 }
 
 /*=============== HOME ===============*/
+
 .home{
   max-width: 400px;
   display: flex;
@@ -296,7 +333,6 @@ p{
 
 /*=============== BUTTONS ===============*/
 
-
 /*=============== ABOUT ===============*/
 /* -- GENERALES -- */
 .about__titles{
@@ -318,9 +354,6 @@ p{
   align-items: center;
 }
 /* -- INFORMACIÓN PERSONAL -- */
-.about__content--personal-information, .about__content--interests {
-  width: 50%;
-}
 .about__section--description-text{
   text-align: justify;
 }
@@ -328,19 +361,8 @@ p{
   margin: 0 auto;
   max-width: 1200px;
   margin-top: 2rem;
+}
 
-}
-.container__information {
-  display: flex;
-}
-.personal-information__content--item {
-  display: flex;
-  margin-bottom: 1rem;
-}
-.personal-information__item--title {
-  width: 45%;
-  color: var(--first-color-alt);
-}
 .item_icons {
   margin-right: .7rem;
   color: var(--first-color);
