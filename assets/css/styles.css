@@ -84,6 +84,7 @@
 .content__langs-styles, .content__db, .content__others  {
   margin-top: 1rem;
 }
+}
 @media screen and (min-width: 600px) {
   .container__information {
     display: flex;
